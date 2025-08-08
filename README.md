@@ -21,18 +21,28 @@ The data provides financial sentences along with their sentiment labels to help 
 | $ESI on lows, down $1.50 to $2.50 BK a real possibility                                     | negative   |
 | For the last quarter of 2010, Componenta's net sales doubled to EUR131m from EUR76m for the same period... | positive   |
 
-## Features
+##  Tech Stack
 
+- **RNN Model**: LSTM,NLP
+- **Language**: Python (Jupyter Notebook)
+- **Libraries**: `pandas`,`sklearn`, `numpy`, `tensorflow`,`keras`
+- **Data**: Financial review dataset with labeled Sentiments : positive,neutral,negative
+- **Methods**:
 - Text preprocessing and cleaning
 - Embedding 
 - Data Balance
 - Sentiment classification using LSTM / NLP techniques
 - Performance evaluation (accuracy, precision, recall, F1-score)
+---
+
+## 📂 Files
+
+| File                          | Description                                       |
+|-------------------------------|---------------------------------------------------|
+| `FinancialSentiment.ipynb`            | Jupyter notebook for data processing, model building and evaluation |
+| `fiancial_data.xlsx`         | Training data with two colums: Sentence,Sentiment |
+| `README.md`                   | Project documentation                             |
 
 
-## Usage
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/financial-sentiment-analysis.git
-   cd financial-sentiment-analysis
+##  Results
+Achieved 91.23 % accuracy
